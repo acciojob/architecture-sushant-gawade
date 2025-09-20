@@ -3,48 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <title>Architecture Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d8e0db; /* light gray-green like your preview */
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 1100px;
+      background-color: #f5f5f5;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .imageContainer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .imageContainer img {
+      max-width: 100%;
+      height: auto;
+      border: 4px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    td {
+      vertical-align: top;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    td img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 2px solid #999;
+    }
+
+    .col-left,
+    .col-right {
+      width: 200px;
+      text-align: center;
+    }
+
+    .col-middle {
+      width: 600px;
+      padding: 15px;
+      background-color: #fff;
+    }
+
+    .col-middle h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .col-middle p {
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    a {
+      color: darkblue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body style="margin:0; padding:20px; display:flex; justify-content:center; background-color:#f4f4f9; font-family:Arial, sans-serif;">
-
-  <div style="width:1100px; background:#ffffff; padding:20px; border:2px solid #333;">
-    <h1 style="text-align:center; font-size:32px; color:#333;">Architecture</h1>
-
-    <!-- Image container -->
-    <div class="imageContainer" style="text-align:center; margin-bottom:20px;">
-      <img src="https://via.placeholder.com/1000x400?text=Architecture+Banner" alt="Architecture Banner" style="max-width:100%; border:2px solid #444;">
+<body>
+  <div class="container">
+    
+    <!-- Top Image -->
+    <div class="imageContainer">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Modern Architecture">
     </div>
 
-    <!-- Table -->
-    <table style="width:100%; border-collapse:collapse;">
+    <!-- Table Layout -->
+    <table>
+      <!-- Row 1 -->
       <tr>
-        <td width="200" style="border:2px solid #444; padding:10px; text-align:center;">
-          <img src="https://via.placeholder.com/200x200?text=Building+1" alt="Building 1" style="width:100%; height:auto;">
+        <td class="col-left">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Building Structure">
         </td>
-        <td width="600" style="border:2px solid #444; padding:15px; text-align:justify; font-size:16px; line-height:1.5; color:#444;">
-          Architecture is the art and science of designing buildings and structures. 
-          It combines creativity, engineering, and functionality to create spaces 
-          that are both practical and inspiring. From ancient temples to modern skyscrapers, 
-          architecture reflects cultural values and technological advancements.
+        <td class="col-middle">
+          <h3>Unit #5 - Floor Plans</h3>
+          <p>
+            A. Kitchen <br>
+            B. Bathroom <br>
+            C. Using "Slabs" <br>
+            D. Georgian Home <br>
+            E. Sketching Assignment #5
+          </p>
         </td>
-        <td width="200" style="border:2px solid #444; padding:10px; text-align:center;">
-          <img src="https://via.placeholder.com/200x200?text=Building+2" alt="Building 2" style="width:100%; height:auto;">
+        <td class="col-right">
+          <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="Architecture Spiral">
         </td>
       </tr>
+
+      <!-- Row 2 -->
       <tr>
-        <td width="200" style="border:2px solid #444; padding:10px; text-align:center;">
-          <img src="https://via.placeholder.com/200x200?text=Building+3" alt="Building 3" style="width:100%; height:auto;">
+        <td class="col-left">
+          <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="House Plans">
+          <p><strong>HousePlans.com</strong><br>
+          The largest source for quality affordable ready-made house plans. A great place to surf for space planning ideas. 
+          <a href="#">learn more</a>
+          </p>
         </td>
-        <td width="600" style="border:2px solid #444; padding:15px; text-align:justify; font-size:16px; line-height:1.5; color:#444;">
-          Modern architecture emphasizes clean lines, open spaces, and sustainability. 
-          Architects use innovative materials and technologies to design structures 
-          that are energy-efficient and environmentally friendly, while still maintaining 
-          aesthetic appeal and durability.
+        <td class="col-middle">
+          <h3>Objective</h3>
+          <p>
+            Discuss factors that are important in the design of bedrooms. Plan the size and location of closets for a typical residence. 
+            Plan a furniture arrangement for a room. Implement important design considerations for bathrooms. 
+            Plan the service area of a home by applying good design principles.
+          </p>
+          <p>
+            Design a functional kitchen to meet a family’s needs. Select kitchen appliances that are appropriate for a design. 
+            Plan an efficient clothes care center. Identify the rooms and areas that comprise the living area. 
+            Apply design principles to planning a living room. Integrate the furniture in a living room plan. 
+            Analyze a dining room using good design principles. Design a functional entry and foyer.
+          </p>
         </td>
-        <td width="200" style="border:2px solid #444; padding:10px; text-align:center;">
-          <img src="https://via.placeholder.com/200x200?text=Building+4" alt="Building 4" style="width:100%; height:auto;">
+        <td class="col-right">
+          <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="Green Floor">
+          <p><strong>Green Floor</strong><br>
+          FreeGreen.com offers both sponsored and non-sponsored floor plans. Their goal is to provide consumers with free solutions 
+          to their green architectural needs. 
+          <a href="#">learn more</a>
+          </p>
         </td>
       </tr>
     </table>
+
   </div>
 </body>
 </html>
